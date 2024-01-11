@@ -132,7 +132,7 @@ class _SignupState extends State<Signup> {
 }
 void signUp(Function(String text) update, String username, String password) async {
   try {
-    final response = await http.post(Uri.parse('http://192.168.1.67/mobileproject/adduser.php'),
+    final response = await http.post(Uri.parse('http://10.0.2.2/mobileproject/adduser.php'),
         headers: <String, String>{
           'Content-Type': 'application/json; charset=UTF-8',
         },
