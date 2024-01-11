@@ -422,7 +422,7 @@ class _TestState extends State<Test> {
 void setResult(Function(String text) update, String username, String result, String age, double weight, double height, int diet, int days, int minutes, bool ocd, bool adhd, bool overthinking, bool positivity) async {
   try {
     // send a JSON object using http post
-    final response = await http.post(Uri.parse('http://192.168.1.67/mobileproject/result.php'),
+    final response = await http.post(Uri.parse('http://10.0.2.2/mobileproject/result.php'),
         headers: <String, String>{
           'Content-Type': 'application/json; charset=UTF-8',
         }, // convert the cid, name and key to a JSON object
