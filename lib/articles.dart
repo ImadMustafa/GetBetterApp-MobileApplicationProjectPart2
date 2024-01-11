@@ -16,25 +16,8 @@ class _ArticlesState extends State<Articles> {
 
   List list = [];
 
-  // Future ReadData()async{
-  //   var url = "http://192.168.1.67/mobileproject/topic.php";
-  //   var res = await http.get(Uri.parse(url));
-  //
-  //   if(res.statusCode == 200){
-  //     var red = jsonDecode(res.body);
-  //
-  //     setState(() {
-  //       list.addAll(red);
-  //     });
-  //
-  //     print(list);
-  //   } else {
-  //     print('Failed to load data. Status code: ${res.statusCode}');
-  //   }
-  //
-  // }
   Future<void> ReadData() async {
-    var url = "http://192.168.1.67/mobileproject/topic.php";
+    var url = "http://10.0.2.2/mobileproject/topic.php";
     var res = await http.get(Uri.parse(url));
 
     if (res.statusCode == 200) {
