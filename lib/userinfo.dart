@@ -40,7 +40,7 @@ class _UserInfoState extends State<UserInfo> {
   }
 
   Future<void> ReadData() async {
-    var url = "http://192.168.1.67/mobileproject/user.php";
+    var url = "http://10.0.2.2/mobileproject/user.php";
     var res = await http.get(Uri.parse(url));
 
     if (res.statusCode == 200) {
