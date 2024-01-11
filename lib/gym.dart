@@ -16,7 +16,7 @@ class _GymState extends State<Gym> {
   List list = [];
 
   Future<void> ReadData() async {
-    var url = "http://192.168.1.67/mobileproject/gym.php";
+    var url = "http://10.0.2.2/mobileproject/gym.php";
     var res = await http.get(Uri.parse(url));
 
     if (res.statusCode == 200) {
